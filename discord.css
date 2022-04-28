@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(222, 222, 222);
+}
+
+.container {
+    display: grid;
+    grid-template:
+        "icons header header" 50px
+        "icons left_menu main" 1fr /
+        50px 200px 1fr;  
+        
+    height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 0.5fr auto 1fr auto;
+    grid-area: header;
+    background-color: white;
+    border: 1px dotted blue;
+}
+
+.icons {
+    grid-area: icons;
+    background-color: white;
+    border: 1px dotted blue;
+}
+
+.left_menu {
+    grid-area: left_menu;
+    background-color: white;
+    border: 1px dotted blue;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    border: 1px dotted blue;
+}
